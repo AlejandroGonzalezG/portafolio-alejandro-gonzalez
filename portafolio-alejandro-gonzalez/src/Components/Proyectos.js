@@ -147,8 +147,8 @@ const Proyectos = () => {
                     </a>
                 </div>
             </div>
-            <div className="row card-group row-cols-md-2 py-5 mx-3 justify-content-center rounded">
-                <div className="card mb-3 rounded" style={{ maxWidth: 540 }}>
+            <div className="row card-group row-cols-md-2 py-5 mx-3 rounded">
+                <div className="card mb-3 rounded offset-md-3 " style={{ maxWidth: 540 }}>
                     <div className="row">
                     <h3 className="card-title pe-0 text-center">Página de Registro y Login</h3>
                         <div className="col-md-12 ps-0 text-center">
