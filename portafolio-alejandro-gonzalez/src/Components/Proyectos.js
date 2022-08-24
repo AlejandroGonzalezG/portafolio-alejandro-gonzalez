@@ -172,7 +172,7 @@ const Proyectos = () => {
                             </div>
                         </div>
                     </div>
-                    <a href="https://login-exercise-alejandro-gonzalez.vercel.app/login" target='blank' className="btn btn-primary" style={estiloBoton}>
+                    <a href="https://login-exercise-alejandro-gonzalez.vercel.app/" target='blank' className="btn btn-primary" style={estiloBoton}>
                         Demo en vivo
                     </a>
                     <a href="https://github.com/AlejandroGonzalezG/login-exercise" target='blank' className="btn btn-primary" style={estiloBoton}>
