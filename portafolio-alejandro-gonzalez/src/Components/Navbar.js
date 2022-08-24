@@ -6,6 +6,13 @@ const estiloNavbar = {
     justifyContent: "end"
 }
 
+const estiloDiv = {
+    backgroundImage: "url('https://i.ibb.co/kBkzTJg/tarjeta.png')",
+    backgroundSize: "cover",
+    border: "none",
+}
+
+
 const Navbar = () => {
 
 
@@ -13,7 +20,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    AG
+                <img src="https://www.seekpng.com/png/full/85-855190_html-code-coding-language-svg-png-icon-free.png" style={{maxWidth: 50,}}/>
                 </Link>
                 <button
                     className="navbar-toggler"

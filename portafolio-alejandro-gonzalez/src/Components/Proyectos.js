@@ -2,7 +2,17 @@ import React from "react";
 
 const estiloDiv = {
     marginRight: "200px",
-    maxWidth: "540px"
+    maxWidth: "540px",
+    backgroundImage: "url('https://i.ibb.co/kBkzTJg/tarjeta.png')",
+    backgroundSize: "cover",
+    border: "none",
+    color: "#FFFFFF",
+}
+
+
+const estiloLetra2 = {
+    color: "#FFFFFF",
+    marginBottom: "40px"
 }
 
 const estiloBoton = {
@@ -13,13 +23,18 @@ const estiloBoton = {
     alignSelf: "center"
 }
 
+const estiloLetra = {
+    textAlign: "justify"
+}
+
+
 const Proyectos = () => {
 
     return (
         <>
             <div className="row card-group row-cols-md-2 py-5 mx-3 rounded">
-                <div className="card mb-3 rounded" style={estiloDiv}>
-                    <div className="row">
+                <div className="card mb-3 rounded " style={estiloDiv}  id="card">
+                    <div className="row justify-content-between mt-1 mb-1">
                         <h3 className="card-title pe-0 text-center">Contador Simple</h3>
                         <div className="col-md-12 ps-0 text-center">
                             <img
@@ -34,7 +49,7 @@ const Proyectos = () => {
                         </div>
                         <div className="col-md-12 pe-0">
                             <div className="card-body col-12 text-center">
-                                <p className="card-text">
+                                <p className="card-text" style={estiloLetra}>
                                     Proyecto que consiste en un contador simple creado en React utilizando hooks como setInterval.
                                 </p>
 
@@ -48,8 +63,8 @@ const Proyectos = () => {
                         Código
                     </a>
                 </div>
-                <div className="card mb-3 rounded " style={{ maxWidth: 540 }}>
-                    <div className="row">
+                <div className="card mb-3 rounded "style={estiloDiv}>
+                    <div className="row mt-1 mb-1">
                         <h3 className="card-title pe-0 text-center">Semáforo Simple</h3>
                         <div className="col-md-12 ps-0 rounded text-center">
                             <img
@@ -65,7 +80,7 @@ const Proyectos = () => {
                         <div className="col-md-12 pe-0">
                             <div className="card-body text-center">
 
-                                <p className="card-text">
+                                <p className="card-text" style={estiloLetra}>
                                     Proyecto sobre un semáforo simple que utiliza hooks para su implementación.
                                 </p>
 
@@ -81,8 +96,8 @@ const Proyectos = () => {
                 </div>
             </div>
             <div className="row card-group row-cols-md-2 mx-3 rounded">
-                <div className="card mb-3 rounded" style={estiloDiv}>
-                    <div className="row justify-content-between">
+                <div className="card mb-3 rounded " style={estiloDiv}>
+                    <div className="row justify-content-between mt-1 mb-1">
                     <h3 className="card-title pe-0 text-center">Tic Tac Toe</h3>
                         <div className="col-md-12 col-xs-12 ps-0 text-center">
                             <img
@@ -91,14 +106,14 @@ const Proyectos = () => {
                                     maxHeight: "10.5rem",
                                     backgroundSize: "cover",
                                 }}
-                                className="img-card rounded-start "
+                                className="img-card rounded"
                                 alt="..." 
                             />
                         </div>
                         <div className="col-md-12 pe-0">
                             <div className="card-body col-12 text-center">
                                 
-                                <p className="card-text">
+                                <p className="card-text" style={estiloLetra}>
                                     Utilizando hooks con props en React se implementó un proyecto para poder jugar Tic Tac Toe entre 2 jugadores.
                                 </p>
 
@@ -114,9 +129,9 @@ const Proyectos = () => {
                 </div>
                 <div
                     className="card mb-3 rounded"
-                    style={{ maxWidth: 540 }}
+                    style={estiloDiv}
                 >
-                    <div className="row card-group justify-content-between">
+                    <div className="row card-group justify-content-between mt-1 mb-1">
                     <h3 className="card-title text-center">Blog de Star Wars</h3>
                         <div className="col-md-12 ps-0 rounded text-center">
                             <img
@@ -132,7 +147,7 @@ const Proyectos = () => {
                         <div className="col-md-12 pe-0">
                             <div className="card-body text-center">
                                 
-                                <p className="card-text">
+                                <p className="card-text" style={estiloLetra}>
                                     Blog de Star Wars usando la swapi. Se utilizan distintos hooks centralizados a través del Context.
                                 </p>
 
@@ -148,8 +163,8 @@ const Proyectos = () => {
                 </div>
             </div>
             <div className="row card-group row-cols-md-2 py-5 mx-3 rounded">
-                <div className="card mb-3 rounded offset-md-3 " style={{ maxWidth: 540 }}>
-                    <div className="row">
+                <div className="card mb-3 rounded offset-md-3 offset-xl-0" style={estiloDiv}>
+                    <div className="row mt-1 mb-1">
                     <h3 className="card-title pe-0 text-center">Página de Registro y Login</h3>
                         <div className="col-md-12 ps-0 text-center">
                             <img
@@ -165,7 +180,7 @@ const Proyectos = () => {
                         <div className="col-md-12 pe-0">
                             <div className="card-body col-12 text-center">
                                 
-                                <p className="card-text">
+                                <p className="card-text" style={estiloLetra}>
                                     Proyecto que consiste en un contador simple creado en React utilizando hooks como setInterval.
                                 </p>
 

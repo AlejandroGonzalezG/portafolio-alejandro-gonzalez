@@ -1,20 +1,21 @@
 import React from "react";
 
 const estiloLetra = {
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+    marginBottom: "40px",
+    marginTop: "50px"
 }
 
 const estiloCard = {
-    backgroundColor: (245, 245, 245, 1),
-    opacity: "0"
+    marginTop: "7%"
 }
 const Herramientas = () => {
 
     return (
         <>
             <h1 className="texto text-center" style={estiloLetra}>Herramientas</h1>
-            <div className="container mb-3 rounded">
-                <div className="row my-5">
+            <div className="container rounded" style={estiloCard}>
+                <div className="row">
                     <div className="col-sm-4 col-md-2 col-4 my-4">
                         <img
                             src="https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png"
@@ -78,8 +79,8 @@ const Herramientas = () => {
                 </div>
             </div>
             <div className="container mb-3 rounded">
-                <div className="row my-5">
-                    <div className="col-sm-3 col-md-4 col-3">
+                <div className="row">
+                    <div className="col-sm-3 col-md-2 col-3 my-4">
                         <img
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png"
                             style={{
@@ -89,7 +90,7 @@ const Herramientas = () => {
                             alt="..."
                         />
                     </div>
-                    <div className="offset-1 col-sm-4 col-md-3 col-4">
+                    <div className="offset-1 col-sm-4 col-md-3 col-4 my-4">
                         <img
                             src="https://cdn-icons-png.flaticon.com/512/337/337953.png"
                             style={{
@@ -99,7 +100,7 @@ const Herramientas = () => {
                             alt="..."
                         />
                     </div>
-                    <div className="offset-1 offset-md-2 col-sm-3 col-md-2 col-3">
+                    <div className="offset-1 col-sm-3 col-md-2 col-3 my-4">
                         <img
                             src="https://cdn.worldvectorlogo.com/logos/flask.svg"
                             style={{
@@ -108,6 +109,9 @@ const Herramientas = () => {
                             className="img-card rounded"
                             alt="..."
                         />
+                    </div>
+                    <div className="offset-md-1 col-sm-3 col-md-2 col-3 my-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" viewBox="0 0 841.9 595.3" style={{ maxHeight: 80, fill: "white" }} className="img-card rounded" alt="..." />
                     </div>
                 </div>
             </div>

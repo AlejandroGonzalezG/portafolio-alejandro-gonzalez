@@ -6,7 +6,8 @@ const estilodiv = {
 };
 
 const estiloLetra = {
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+    textAlign: "justify"
 }
 
 const estiloContainer = {
@@ -38,8 +39,8 @@ const SobreMi = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body text-center">
-                            <div className="container-title bg-transparent" style={estilodiv}><h1 style={estiloLetra}><strong>Alejandro González</strong></h1><h2 style={estiloContainer}><strong>Full Stack Developer</strong></h2></div>
-                            <h5 className="card-title ms-1 mt-5" style={estiloLetra}>
+                            <div className="container-title bg-transparent" style={estilodiv}><h1 style={estiloContainer}><strong>Alejandro González</strong></h1><h2 style={estiloContainer}><strong>Full Stack Developer</strong></h2></div>
+                            <h5 className="card-title ms-1 " style={estiloLetra}>
                                 Desarrollador Full Stack con conocimientos
                                 en React y Python (con Flask). Estudié en el
                                 bootcamp de 4Geeks Academy el cuál me
