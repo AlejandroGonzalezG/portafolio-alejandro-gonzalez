@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 const estiloNavbar = {
@@ -9,11 +10,11 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container-fluid">
-                <h3 className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     AG
-                </h3>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -28,24 +29,24 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav" style={estiloNavbar}>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/">
                                 Sobre mí
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="proyectos">
                                 Proyectos
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="herramientas">
                                 Herramientas
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="contacto">
                                 Contacto
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

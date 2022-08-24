@@ -1,72 +1,66 @@
 import React, { useContext, useEffect } from "react";
 
+const estilodiv = {
+    marginTop: "30px",
 
-const estiloJumbotron = {
-    height: "70vh",
-    display: "flex"
 };
 
-const estiloTitulo = {
-    marginTop: "150px",
-    fontSize: "47px"
-};
-
-const estiloTitulo2 = {
-    marginTop: "70px",
-    fontSize: "22px"
-};
-
-const estiloContainer = {
-    width: "100%",
-    margin: "0px",
-    padding: "0px",
+const estiloLetra = {
+    color: "#FFFFFF"
 }
 
+const estiloContainer = {
+    margin: "15px",
+    marginTop: "30px",
+    color: "#FFFFFF"
+}
 const estiloImagen = {
-    marginTop: "80px",
-    marginRight: "20px"
+    marginTop: "40px",
 }
 
 const estiloBoton = {
-    marginTop: "80px"
+    marginTop: "48px"
 }
 
 
 const SobreMi = () => {
 
     return (
-        <div className="container-fluid" style={estiloContainer}>
-            <div className="row">
-                <div className="col-xxxl-12">
-                    <div className="jumbotron px-5 py-1" style={estiloJumbotron}>
-                        <div className="col-xxl-5 col-md-5" style={estiloImagen}>
-                            <img src="https://images.squarespace-cdn.com/content/v1/53daa37ce4b0f890bb843382/1421516330237-9GPRNWXZMLKB9X8CH2Y7/image-asset.jpeg" className="img-fluid rounded-circle" />
-                        </div>
-                        <div className="col-xxxl-7 col-md-5">
-                            <h2 className="titulo" style={estiloTitulo}>
-                                {" "}
-                                Alejandro González{" "}
-                                <span className="text-secondary ">Full Stack Developer</span>
-                            </h2>
-                            <div className="col-12">
-                                <p className="titulo" style={estiloTitulo2}>
-                                    {" "}
-                                    Desarrollador Full Stack con conocimientos
-                                    en React y Python (con Flask). Estudié en el
-                                    bootcamp de 4Geeks Academy el cuál me
-                                    dió la oportunidad de volver a lo siempre
-                                    me gusto, la programación. Mi principal
-                                    foco es continuar aprendiendo,
-                                    perfeccionando las tecnologías que conozco
-                                    y aprender tecnologías nuevas.{" "}
-                                </p>
-                            </div>
-                            <a className="btn btn-primary" href="#" role="button">Ver Curriculum</a>
+        <>
+            <div className="card mb-4 bg-transparent mx-3 m-3 my-6 border-0 rounded-4">
+                <div className="row g-0">
+                    <div className="col-md-4">
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/53daa37ce4b0f890bb843382/1421516330237-9GPRNWXZMLKB9X8CH2Y7/image-asset.jpeg"
+                            className="img-fluid mb-5 rounded opacity-80"
+                            alt="..." style={estiloImagen}
+                        />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body text-center">
+                            <div className="container-title bg-transparent" style={estilodiv}><h1 style={estiloLetra}><strong>Alejandro González</strong></h1><h2 style={estiloContainer}><strong>Full Stack Developer</strong></h2></div>
+                            <h5 className="card-title ms-1 mt-5" style={estiloLetra}>
+                                Desarrollador Full Stack con conocimientos
+                                en React y Python (con Flask). Estudié en el
+                                bootcamp de 4Geeks Academy el cuál me
+                                dió la oportunidad de volver a lo siempre
+                                me gusto, la programación. Mi principal
+                                foco es continuar aprendiendo,
+                                perfeccionando las tecnologías que conozco
+                                y aprender tecnologías nuevas. En mi tiempo
+                                libre me gusta jugar videojuegos o ver alguna
+                                serie con una buena cerveza y a veces cuando
+                                el ánimo da cocinar algo rico para acompañar
+                                el buen momento.
+                            </h5>
+                            <p className="card-text">
+                                <a className="btn btn-dark border-0 shadow rounded-3 overflow-hidden" href="#" style={estiloBoton}>Ver Curriculum</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 };
 
