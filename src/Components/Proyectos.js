@@ -181,7 +181,7 @@ const Proyectos = () => {
                             <div className="card-body col-12 text-center">
                                 
                                 <p className="card-text" style={estiloLetra}>
-                                    Proyecto que consiste en un contador simple creado en React utilizando hooks como setInterval.
+                                    Proyecto que consiste en un Login integrado con Python en back y React en front.
                                 </p>
 
                             </div>
