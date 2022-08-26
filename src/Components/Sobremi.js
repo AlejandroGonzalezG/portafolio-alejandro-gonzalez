@@ -55,7 +55,7 @@ const SobreMi = () => {
                                 el buen momento.
                             </h5>
                             <p className="card-text">
-                                <a className="btn btn-dark border-0 shadow rounded-3 overflow-hidden" href="https://www.canva.com/design/DAFJxyzj0nc/67-vZPAhyhQgTPLQVSedVQ/view?utm_content=DAFJxyzj0nc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" style={estiloBoton}>Ver Curriculum</a>
+                                <a className="btn btn-dark border-0 shadow rounded-3 overflow-hidden" href="https://www.canva.com/design/DAFJxyzj0nc/67-vZPAhyhQgTPLQVSedVQ/view?utm_content=DAFJxyzj0nc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target='blank' style={estiloBoton}>Ver Curriculum</a>
                             </p>
                         </div>
                     </div>
