@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/App.css"
 
 const estilodiv = {
     marginTop: "30px",
@@ -17,6 +18,10 @@ const estiloContainer = {
 }
 const estiloImagen = {
     marginTop: "40px",
+    borderRadius: 400 / 2,
+    overflow: "hidden",
+    borderWidth: 3,
+    borderColor: "red"
 }
 
 const estiloBoton = {
@@ -32,12 +37,12 @@ const SobreMi = () => {
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img
-                            src="https://images.squarespace-cdn.com/content/v1/53daa37ce4b0f890bb843382/1421516330237-9GPRNWXZMLKB9X8CH2Y7/image-asset.jpeg"
+                            src="https://i.ibb.co/rdk8wTf/perfil.jpg"
                             className="img-fluid mb-5 rounded opacity-80"
                             alt="..." style={estiloImagen}
                         />
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <div className="card-body text-center">
                             <div className="container-title bg-transparent" style={estilodiv}><h1 style={estiloContainer}><strong>Alejandro González</strong></h1><h2 style={estiloContainer}><strong>Full Stack Developer</strong></h2></div>
                             <h5 className="card-title ms-1 " style={estiloLetra}>

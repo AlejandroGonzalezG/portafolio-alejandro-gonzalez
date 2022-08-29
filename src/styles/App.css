@@ -3,3 +3,7 @@ body {
     width: 100%;
     background-size: cover;
 }
+
+.img-fluid {
+    clip-path: circle(40% at 50% 50%)
+}
