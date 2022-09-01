@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import SvgComponent from "../Components/logo.jsx"
 
 const estiloNavbar = {
     justifyContent: "end"
@@ -12,16 +12,22 @@ const estiloDiv = {
     border: "none",
 }
 
+const estiloLogo = {
+    maxWidth: "295px",
+    midWidht: "200px",
+    fill : "transparent"
+}
+
 
 const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark">
-            <div className="container-fluid">
-                <Link className="navbar-brand" to="/">
-                <img src="https://www.seekpng.com/png/full/85-855190_html-code-coding-language-svg-png-icon-free.png" style={{maxWidth: 50,}}/>
-                </Link>
+        <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark">
+            <div className="container-fluid" >
+                <div className="container-fluid" style={estiloLogo}>
+                    <SvgComponent />
+                </div>
                 <button
                     className="navbar-toggler"
                     type="button"
